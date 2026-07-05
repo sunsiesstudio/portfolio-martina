@@ -1,13 +1,8 @@
 import { FEATURED_PRACTICE, MORE_PRACTICE } from "@/lib/work";
-import { Stipple } from "./Stipple";
 
 export default function Work() {
   return (
     <section id="work" className="relative overflow-hidden">
-      <Stipple
-        color="var(--color-ink)"
-        className="pointer-events-none absolute right-4 top-24 hidden h-32 w-24 opacity-[0.15] sm:block"
-      />
       <div className="relative mx-auto max-w-5xl px-6 py-20">
         <p className="font-script text-3xl text-sage">Field notes</p>
         <h2 className="mt-2 font-serif text-3xl font-bold italic tracking-tight text-ink sm:text-4xl">

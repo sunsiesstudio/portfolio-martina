@@ -1,14 +1,9 @@
-import { Stipple } from "./Stipple";
 import { AmbientBackground } from "./AmbientBackground";
 
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
       <AmbientBackground className="absolute inset-0" />
-      <Stipple
-        color="var(--color-ink)"
-        className="pointer-events-none absolute bottom-6 right-6 hidden h-28 w-40 opacity-[0.18] sm:block"
-      />
 
       <div className="relative mx-auto max-w-6xl px-6 pb-28 pt-20 sm:pt-28">
         <p className="font-script text-4xl text-ink/80 sm:text-5xl">Martina Solés</p>

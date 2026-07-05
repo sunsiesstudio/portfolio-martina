@@ -1,14 +1,9 @@
-import { Stipple } from "./Stipple";
 import { AmbientBackground } from "./AmbientBackground";
 
 export default function Contact() {
   return (
     <section id="contact" className="relative overflow-hidden px-6 py-24 text-center">
       <AmbientBackground className="absolute inset-0" />
-      <Stipple
-        color="var(--color-ink)"
-        className="pointer-events-none absolute bottom-8 left-8 hidden h-32 w-24 opacity-[0.15] sm:block"
-      />
       <p className="relative font-script text-4xl text-ink/70">Let&apos;s talk</p>
       <h2 className="relative mx-auto mt-2 max-w-2xl font-serif text-3xl font-bold italic tracking-tight text-ink sm:text-5xl">
         Got a shift you&apos;re trying to get ahead of?

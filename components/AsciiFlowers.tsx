@@ -1,13 +1,20 @@
-import { generateAsciiFlowers } from "@/lib/asciiFlowers";
+"use client";
+
+import { useEffect, useState } from "react";
+import { generateAsciiFlowers, type AsciiFlower } from "@/lib/asciiFlowers";
 
 export function AsciiFlowers({
-  count = 80,
+  count = 90,
   className,
 }: {
   count?: number;
   className?: string;
 }) {
-  const flowers = generateAsciiFlowers(count);
+  const [flowers, setFlowers] = useState<AsciiFlower[]>([]);
+
+  useEffect(() => {
+    setFlowers(generateAsciiFlowers(count));
+  }, [count]);
 
   return (
     <div className={`pointer-events-none absolute inset-0 overflow-hidden ${className ?? ""}`} aria-hidden="true">

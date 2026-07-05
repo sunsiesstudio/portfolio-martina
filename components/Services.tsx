@@ -1,13 +1,8 @@
 import { SERVICES } from "@/lib/work";
-import { Stipple } from "./Stipple";
 
 export default function Services() {
   return (
     <section id="services" className="relative overflow-hidden">
-      <Stipple
-        color="var(--color-ink)"
-        className="pointer-events-none absolute right-8 top-8 hidden h-24 w-32 opacity-[0.18] sm:block"
-      />
       <div className="relative mx-auto max-w-5xl px-6 py-24">
         <p className="font-script text-3xl text-sage">Ways in</p>
         <h2 className="mt-2 max-w-xl font-serif text-3xl font-bold italic tracking-tight text-ink sm:text-4xl">
