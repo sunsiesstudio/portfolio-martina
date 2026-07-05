@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { AsciiShapes } from "./AsciiShapes";
+import { PhotoStipple } from "./PhotoStipple";
 
 export default function Hero() {
   return (
@@ -9,9 +10,10 @@ export default function Hero() {
         alt=""
         fill
         priority
-        className="object-cover"
+        className="object-cover blur-md scale-110"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-paper/90 via-paper/60 to-paper/20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-paper/90 via-paper/55 to-paper/25" />
+      <PhotoStipple className="pointer-events-none absolute left-[28%] top-[8%] hidden h-[85%] w-[38%] opacity-70 sm:block" />
       <AsciiShapes
         count={16}
         avoid={{ leftRange: [0, 62], topRange: [0, 100] }}
