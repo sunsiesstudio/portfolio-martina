@@ -16,8 +16,8 @@ export function generateAsciiFlowers(count: number): AsciiFlower[] {
     glyph: GLYPHS[Math.floor(Math.random() * GLYPHS.length)],
     leftPct: Math.random() * 100,
     topPct: Math.random() * 100,
-    size: 28 + Math.random() * 56,
+    size: 80 + Math.random() * 220,
     rotation: Math.random() * 60 - 30,
-    opacity: 0.18 + Math.random() * 0.27,
+    opacity: 0.15 + Math.random() * 0.25,
   }));
 }

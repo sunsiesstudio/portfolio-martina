@@ -19,7 +19,7 @@ export default function Home() {
         <Contact />
         <Footer />
       </main>
-      <AsciiFlowers count={90} className="z-10" />
+      <AsciiFlowers count={35} className="z-10" />
     </div>
   );
 }
