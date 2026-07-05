@@ -1,4 +1,5 @@
-import { Scribble } from "./Scribble";
+import { Grain } from "./Grain";
+import { Stipple } from "./Stipple";
 
 export default function Contact() {
   return (
@@ -6,12 +7,13 @@ export default function Contact() {
       id="contact"
       className="relative overflow-hidden px-6 py-24 text-center"
       style={{
-        background: "linear-gradient(180deg, #f4efe4 0%, #c7d8de 100%)",
+        background: "linear-gradient(180deg, #f4efe4 0%, #ded2a8 100%)",
       }}
     >
-      <Scribble
+      <Grain className="pointer-events-none absolute inset-0 opacity-[0.15] mix-blend-overlay" />
+      <Stipple
         color="var(--color-ink)"
-        className="pointer-events-none absolute -bottom-14 -left-14 h-56 w-56 opacity-[0.15] sm:h-72 sm:w-72"
+        className="pointer-events-none absolute bottom-8 left-8 hidden h-32 w-24 opacity-[0.15] sm:block"
       />
       <p className="relative font-script text-4xl text-ink/70">Let&apos;s talk</p>
       <h2 className="mx-auto mt-2 max-w-2xl font-serif text-3xl font-bold italic tracking-tight text-ink sm:text-5xl">
