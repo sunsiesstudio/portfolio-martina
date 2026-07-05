@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { generateAsciiFlowers, type AsciiFlower } from "@/lib/asciiFlowers";
 
 export function AsciiFlowers({
-  count = 90,
+  count = 35,
   className,
 }: {
   count?: number;
@@ -19,19 +19,19 @@ export function AsciiFlowers({
   return (
     <div className={`pointer-events-none absolute inset-0 overflow-hidden ${className ?? ""}`} aria-hidden="true">
       {flowers.map((f) => (
-        <span
+        <pre
           key={f.id}
-          className="absolute select-none text-white"
+          className="absolute select-none whitespace-pre font-mono leading-none text-white"
           style={{
             left: `${f.leftPct}%`,
             top: `${f.topPct}%`,
-            fontSize: `${f.size}px`,
+            fontSize: `${f.fontSize}px`,
             opacity: f.opacity,
             transform: `rotate(${f.rotation}deg)`,
           }}
         >
-          {f.glyph}
-        </span>
+          {f.pattern}
+        </pre>
       ))}
     </div>
   );

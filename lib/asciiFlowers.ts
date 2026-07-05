@@ -1,11 +1,20 @@
-const GLYPHS = ["✿", "❀", "✾", "❁", "✼"];
+// Small multi-line ASCII art flowers, built from plain keyboard characters
+// (not unicode dingbats) so they read as literal typed art, like a
+// terminal drawing, rather than a single decorative glyph.
+const FLOWER_PATTERNS = [
+  `  .-.\n (*.*)\n  \`-'\n   |\n   |`,
+  ` \\   /\n  \\ /\n --*--\n  / \\\n /   \\`,
+  `  .   .\n   \\ /\n    *\n   / \\\n  '   '`,
+  ` o   o\n  \\ /\n   X\n  / \\\n o   o`,
+  `  _,-.\n ( * )\n  \`-,'\n   |\n  / \\`,
+];
 
 export type AsciiFlower = {
   id: number;
-  glyph: string;
+  pattern: string;
   leftPct: number;
   topPct: number;
-  size: number;
+  fontSize: number;
   rotation: number;
   opacity: number;
 };
@@ -13,11 +22,11 @@ export type AsciiFlower = {
 export function generateAsciiFlowers(count: number): AsciiFlower[] {
   return Array.from({ length: count }, (_, i) => ({
     id: i,
-    glyph: GLYPHS[Math.floor(Math.random() * GLYPHS.length)],
+    pattern: FLOWER_PATTERNS[Math.floor(Math.random() * FLOWER_PATTERNS.length)],
     leftPct: Math.random() * 100,
     topPct: Math.random() * 100,
-    size: 80 + Math.random() * 220,
-    rotation: Math.random() * 60 - 30,
-    opacity: 0.15 + Math.random() * 0.25,
+    fontSize: 12 + Math.random() * 26,
+    rotation: Math.random() * 30 - 15,
+    opacity: 0.18 + Math.random() * 0.27,
   }));
 }
