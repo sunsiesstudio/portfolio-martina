@@ -14,7 +14,7 @@ export default function About() {
           product strategy for platforms like BeInCrypto and Guestline.
         </p>
         <p className="mt-4 max-w-xl leading-relaxed text-ink/75">
-          She works from research, not assumptions — and from a decade spent on
+          She works from research, not assumptions, and from a decade spent on
           both sides: building the speculative thing, and shipping the real one.
         </p>
       </div>

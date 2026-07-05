@@ -24,10 +24,10 @@ export default function Hero() {
           Cultural Intelligence Researcher &amp; Concept Strategist
         </p>
         <h1 className="mt-5 max-w-3xl font-serif text-4xl italic leading-[1.15] tracking-tight text-ink sm:text-6xl">
-          I read culture before it becomes a trend — then help brands build what comes next.
+          I study what&apos;s shifting in culture and technology, then help brands act on it before it&apos;s obvious.
         </h1>
         <p className="mt-6 max-w-xl leading-relaxed text-ink/70">
-          Ten years moving between speculative research and shipped strategy — from a
+          Ten years moving between speculative research and shipped strategy: from a
           Mars-tourism satire exhibited in a Barcelona museum, to a guest-journey study
           that now runs across 3,500+ hotels.
         </p>

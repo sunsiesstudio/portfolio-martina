@@ -8,7 +8,7 @@ export default function Work() {
         Research &amp; practice
       </h2>
       <p className="mt-3 max-w-xl text-ink/60">
-        Where cultural research turned into a point of view — and, sometimes, a
+        Where cultural research turned into a point of view, and sometimes, a
         shipped product.
       </p>
 
