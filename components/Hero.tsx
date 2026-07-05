@@ -1,10 +1,17 @@
-import { AmbientBackground } from "./AmbientBackground";
+import Image from "next/image";
 import { AsciiShapes } from "./AsciiShapes";
 
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
-      <AmbientBackground className="absolute inset-0" />
+      <Image
+        src="/images/hero-deer.jpg"
+        alt=""
+        fill
+        priority
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-paper/90 via-paper/60 to-paper/20" />
       <AsciiShapes
         count={16}
         avoid={{ leftRange: [0, 62], topRange: [0, 100] }}
