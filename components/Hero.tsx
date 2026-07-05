@@ -1,17 +1,10 @@
 import { Stipple } from "./Stipple";
-import { Grain } from "./Grain";
+import { AmbientBackground } from "./AmbientBackground";
 
 export default function Hero() {
   return (
-    <section
-      id="top"
-      className="relative overflow-hidden"
-      style={{
-        background:
-          "radial-gradient(ellipse 70% 55% at 20% 10%, #d8cd9e 0%, transparent 60%), radial-gradient(ellipse 65% 55% at 85% 15%, #b9c19a 0%, transparent 60%), linear-gradient(165deg, #c7bd8f 0%, #ded2a8 45%, #f4efe4 100%)",
-      }}
-    >
-      <Grain className="pointer-events-none absolute inset-0 opacity-[0.18] mix-blend-overlay" />
+    <section id="top" className="relative overflow-hidden">
+      <AmbientBackground className="absolute inset-0" />
       <Stipple
         color="var(--color-ink)"
         className="pointer-events-none absolute bottom-6 right-6 hidden h-28 w-40 opacity-[0.18] sm:block"

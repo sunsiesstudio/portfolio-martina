@@ -1,11 +1,17 @@
 "use client";
 
-import { useId } from "react";
+import { useId, type CSSProperties } from "react";
 
-export function Grain({ className }: { className?: string }) {
+export function Grain({
+  className,
+  style,
+}: {
+  className?: string;
+  style?: CSSProperties;
+}) {
   const id = `grain-filter-${useId().replace(/:/g, "")}`;
   return (
-    <svg className={className} aria-hidden="true">
+    <svg className={className} style={style} aria-hidden="true">
       <filter id={id}>
         <feTurbulence
           type="fractalNoise"
