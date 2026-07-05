@@ -1,19 +1,22 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateAsciiFlowers, type AsciiFlower } from "@/lib/asciiFlowers";
+import { generateAsciiFlowers, type AsciiFlower, type AvoidZone } from "@/lib/asciiFlowers";
 
 export function AsciiFlowers({
   count = 35,
+  avoid,
   className,
 }: {
   count?: number;
+  avoid?: AvoidZone;
   className?: string;
 }) {
   const [flowers, setFlowers] = useState<AsciiFlower[]>([]);
 
   useEffect(() => {
-    setFlowers(generateAsciiFlowers(count));
+    setFlowers(generateAsciiFlowers(count, avoid));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [count]);
 
   return (
