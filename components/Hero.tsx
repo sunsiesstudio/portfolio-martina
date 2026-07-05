@@ -1,11 +1,11 @@
 import { AmbientBackground } from "./AmbientBackground";
-import { AsciiFlowers } from "./AsciiFlowers";
+import { AsciiShapes } from "./AsciiShapes";
 
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
       <AmbientBackground className="absolute inset-0" />
-      <AsciiFlowers
+      <AsciiShapes
         count={16}
         avoid={{ leftRange: [0, 62], topRange: [0, 100] }}
         className="z-[1]"

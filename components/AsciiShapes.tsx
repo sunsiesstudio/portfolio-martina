@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { generateAsciiFlowers, type AsciiFlower, type AvoidZone } from "@/lib/asciiFlowers";
+import { generateAsciiShapes, type AsciiShape, type AvoidZone } from "@/lib/asciiShapes";
 
-export function AsciiFlowers({
+export function AsciiShapes({
   count = 35,
   avoid,
   className,
@@ -12,28 +12,28 @@ export function AsciiFlowers({
   avoid?: AvoidZone;
   className?: string;
 }) {
-  const [flowers, setFlowers] = useState<AsciiFlower[]>([]);
+  const [shapes, setShapes] = useState<AsciiShape[]>([]);
 
   useEffect(() => {
-    setFlowers(generateAsciiFlowers(count, avoid));
+    setShapes(generateAsciiShapes(count, avoid));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [count]);
 
   return (
     <div className={`pointer-events-none absolute inset-0 overflow-hidden ${className ?? ""}`} aria-hidden="true">
-      {flowers.map((f) => (
+      {shapes.map((s) => (
         <pre
-          key={f.id}
+          key={s.id}
           className="absolute select-none whitespace-pre font-mono leading-none text-white"
           style={{
-            left: `${f.leftPct}%`,
-            top: `${f.topPct}%`,
-            fontSize: `${f.fontSize}px`,
-            opacity: f.opacity,
-            transform: `rotate(${f.rotation}deg)`,
+            left: `${s.leftPct}%`,
+            top: `${s.topPct}%`,
+            fontSize: `${s.fontSize}px`,
+            opacity: s.opacity,
+            transform: `rotate(${s.rotation}deg)`,
           }}
         >
-          {f.pattern}
+          {s.pattern}
         </pre>
       ))}
     </div>

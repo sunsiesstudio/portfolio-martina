@@ -1,11 +1,11 @@
 import { AmbientBackground } from "./AmbientBackground";
-import { AsciiFlowers } from "./AsciiFlowers";
+import { AsciiShapes } from "./AsciiShapes";
 
 export default function Contact() {
   return (
     <section id="contact" className="relative overflow-hidden px-6 py-24 text-center">
       <AmbientBackground className="absolute inset-0" />
-      <AsciiFlowers
+      <AsciiShapes
         count={12}
         avoid={{ leftRange: [18, 82], topRange: [0, 100] }}
         className="z-[1]"

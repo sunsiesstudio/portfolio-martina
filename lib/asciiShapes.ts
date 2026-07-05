@@ -1,17 +1,31 @@
-// Small multi-line ASCII art flowers, built from plain keyboard characters
+// Small multi-line ASCII art shapes, built from plain keyboard characters
 // (not unicode dingbats) so they read as literal typed art, like a
-// terminal drawing. Each is petals radiating from a center, plus a stem.
-const FLOWER_PATTERNS = [
+// terminal drawing, scattered across the ambient background sections.
+const SHAPE_PATTERNS = [
+  // flower: petals radiating from a center, plus a stem
   ` \\|/\n--@--\n /|\\\n  |\n  |`,
   ` \\ /\n-(o)-\n / \\\n  |\n  |`,
-  `.  .\n \\/\n-(*)-\n /\\\n'  '\n  |`,
   `+ + +\n+(@)+\n+ + +\n   |\n   |`,
-  `\\   /\n \\ /\n *-*-*\n / \\\n/   \\\n  |`,
-  ` * *\n*(o)*\n * *\n  |\n  |`,
-  `x   x\n \\ /\n--@--\n / \\\nx   x\n  |`,
+  // star burst
+  `  *\n * *\n*   *\n * *\n  *`,
+  ` \\ | /\n  \\|/\n--- ---\n  /|\\\n / | \\`,
+  // diamond / crystal
+  `  /\\\n /  \\\n<    >\n \\  /\n  \\/`,
+  // box / grid
+  ` .--.\n |  |\n '--'`,
+  // spiral-ish scribble
+  `  .-.\n ( . )\n  '-'`,
+  // cross / compass
+  `  |\n--+--\n  |`,
+  // wave
+  `_/\\_/\\_`,
+  // asterisk cluster
+  `* . *\n. * .\n* . *`,
+  // arrow burst
+  ` ^\n/|\\\n |`,
 ];
 
-export type AsciiFlower = {
+export type AsciiShape = {
   id: number;
   pattern: string;
   leftPct: number;
@@ -39,16 +53,16 @@ function samplePosition(avoid?: AvoidZone) {
   return { leftPct: Math.random() < 0.5 ? Math.random() * 8 : 92 + Math.random() * 8, topPct: Math.random() * 100 };
 }
 
-export function generateAsciiFlowers(count: number, avoid?: AvoidZone): AsciiFlower[] {
+export function generateAsciiShapes(count: number, avoid?: AvoidZone): AsciiShape[] {
   return Array.from({ length: count }, (_, i) => {
     const { leftPct, topPct } = samplePosition(avoid);
     return {
       id: i,
-      pattern: FLOWER_PATTERNS[Math.floor(Math.random() * FLOWER_PATTERNS.length)],
+      pattern: SHAPE_PATTERNS[Math.floor(Math.random() * SHAPE_PATTERNS.length)],
       leftPct,
       topPct,
       fontSize: 8 + Math.random() * Math.random() * 190,
-      rotation: Math.random() * 30 - 15,
+      rotation: Math.random() * 40 - 20,
       opacity: 0.18 + Math.random() * 0.27,
     };
   });
