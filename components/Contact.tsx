@@ -1,3 +1,5 @@
+import { Scribble } from "./Scribble";
+
 export default function Contact() {
   return (
     <section
@@ -7,7 +9,11 @@ export default function Contact() {
         background: "linear-gradient(180deg, #f4efe4 0%, #c7d8de 100%)",
       }}
     >
-      <p className="font-script text-4xl text-ink/70">Let&apos;s talk</p>
+      <Scribble
+        color="var(--color-ink)"
+        className="pointer-events-none absolute -bottom-14 -left-14 h-56 w-56 opacity-[0.15] sm:h-72 sm:w-72"
+      />
+      <p className="relative font-script text-4xl text-ink/70">Let&apos;s talk</p>
       <h2 className="mx-auto mt-2 max-w-2xl font-serif text-3xl font-bold italic tracking-tight text-ink sm:text-5xl">
         Got a shift you&apos;re trying to get ahead of?
       </h2>

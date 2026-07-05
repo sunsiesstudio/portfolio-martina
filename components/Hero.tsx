@@ -1,3 +1,5 @@
+import { Scribble } from "./Scribble";
+
 export default function Hero() {
   return (
     <section
@@ -7,14 +9,11 @@ export default function Hero() {
         background: "linear-gradient(180deg, #aec4cd 0%, #c7d8de 55%, #f4efe4 100%)",
       }}
     >
-      {/* floating circle motifs, deer-poster style */}
-      <div className="pointer-events-none absolute -right-10 top-24 hidden sm:block">
-        <div className="relative h-56 w-56">
-          <div className="absolute right-0 top-0 h-56 w-56 rounded-full border-2 border-lime/70" />
-          <div className="absolute right-16 top-24 h-28 w-28 rounded-full border-2 border-lime/70" />
-          <div className="absolute right-4 top-52 h-12 w-12 rounded-full border-2 border-lime/70" />
-        </div>
-      </div>
+      {/* hand-drawn scribble-cloud motif */}
+      <Scribble
+        color="var(--color-paper)"
+        className="pointer-events-none absolute -right-16 -top-6 h-64 w-64 opacity-80 sm:h-80 sm:w-80"
+      />
       <div className="pointer-events-none absolute left-8 top-10 h-14 w-14 rounded-full bg-[#f3c9d9]/70 sm:h-20 sm:w-20" />
       <div className="pointer-events-none absolute left-40 top-4 hidden h-8 w-8 rounded-full bg-[#f3c9d9]/70 sm:block" />
       <div className="pointer-events-none absolute bottom-10 left-1/3 h-10 w-10 rounded-full bg-lime/50 sm:h-16 sm:w-16" />
