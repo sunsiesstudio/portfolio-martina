@@ -1,9 +1,11 @@
 import { AmbientBackground } from "./AmbientBackground";
+import { AsciiFlowers } from "./AsciiFlowers";
 
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
       <AmbientBackground className="absolute inset-0" />
+      <AsciiFlowers count={16} className="z-[1]" />
 
       <div className="relative mx-auto max-w-6xl px-6 pb-28 pt-20 sm:pt-28">
         <p className="font-script text-4xl text-ink/80 sm:text-5xl">Martina Solés</p>

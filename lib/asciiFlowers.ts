@@ -27,7 +27,7 @@ export function generateAsciiFlowers(count: number): AsciiFlower[] {
     pattern: FLOWER_PATTERNS[Math.floor(Math.random() * FLOWER_PATTERNS.length)],
     leftPct: Math.random() * 100,
     topPct: Math.random() * 100,
-    fontSize: 10 + Math.random() * 65,
+    fontSize: 8 + Math.random() * Math.random() * 190,
     rotation: Math.random() * 30 - 15,
     opacity: 0.18 + Math.random() * 0.27,
   }));
