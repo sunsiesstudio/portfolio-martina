@@ -1,4 +1,5 @@
 import { Scribble } from "./Scribble";
+import { Stipple } from "./Stipple";
 
 export default function Hero() {
   return (
@@ -6,7 +7,8 @@ export default function Hero() {
       id="top"
       className="relative overflow-hidden"
       style={{
-        background: "linear-gradient(180deg, #aec4cd 0%, #c7d8de 55%, #f4efe4 100%)",
+        background:
+          "radial-gradient(ellipse 70% 60% at 25% 15%, #8fa06a 0%, transparent 60%), radial-gradient(ellipse 60% 50% at 85% 10%, #c9a171 0%, transparent 55%), linear-gradient(180deg, #7d8f5c 0%, #b9ad84 55%, #f4efe4 100%)",
       }}
     >
       {/* hand-drawn scribble-cloud motif */}
@@ -14,9 +16,13 @@ export default function Hero() {
         color="var(--color-paper)"
         className="pointer-events-none absolute -right-16 -top-6 h-64 w-64 opacity-80 sm:h-80 sm:w-80"
       />
-      <div className="pointer-events-none absolute left-8 top-10 h-14 w-14 rounded-full bg-[#f3c9d9]/70 sm:h-20 sm:w-20" />
-      <div className="pointer-events-none absolute left-40 top-4 hidden h-8 w-8 rounded-full bg-[#f3c9d9]/70 sm:block" />
-      <div className="pointer-events-none absolute bottom-10 left-1/3 h-10 w-10 rounded-full bg-lime/50 sm:h-16 sm:w-16" />
+      <Stipple
+        color="var(--color-paper)"
+        className="pointer-events-none absolute bottom-6 right-6 hidden h-28 w-40 opacity-40 sm:block"
+      />
+      <div className="pointer-events-none absolute left-8 top-10 h-14 w-14 rounded-full bg-blush/80 sm:h-20 sm:w-20" />
+      <div className="pointer-events-none absolute left-40 top-4 hidden h-8 w-8 rounded-full bg-blush/80 sm:block" />
+      <div className="pointer-events-none absolute bottom-10 left-1/3 h-10 w-10 rounded-full bg-blush/60 sm:h-16 sm:w-16" />
 
       <div className="relative mx-auto max-w-6xl px-6 pb-28 pt-20 sm:pt-28">
         <p className="font-script text-4xl text-ink/80 sm:text-5xl">Martina Solés</p>
