@@ -5,15 +5,17 @@ export type AmbientPalette = {
 };
 
 // Ordered by hour of day: dawn, morning, afternoon, evening, night.
-// Kept within a lightness range where dark ink text stays legible throughout.
+// Soft pastel color washes on a light beige base, echoing a blurred
+// bokeh photograph rather than a saturated sunset gradient. Kept light
+// throughout so dark ink text always stays legible.
 export const AMBIENT_PALETTES: { untilHour: number; palette: AmbientPalette }[] = [
   {
     untilHour: 8,
     palette: {
       name: "dawn",
       gradient:
-        "radial-gradient(ellipse 60% 50% at 30% 20%, #eef2ea 0%, transparent 60%), radial-gradient(ellipse 55% 45% at 75% 60%, #c9dedd 0%, transparent 60%), linear-gradient(160deg, #cfe0dc 0%, #e8eee0 50%, #f4efe4 100%)",
-      grainOpacity: 0.14,
+        "radial-gradient(ellipse 55% 60% at 30% 10%, #bdd9d2 0%, transparent 55%), radial-gradient(ellipse 50% 50% at 72% 55%, #d3e2b8 0%, transparent 55%), radial-gradient(ellipse 38% 38% at 58% 82%, #aecbe3 0%, transparent 60%), linear-gradient(160deg, #f0ecdf 0%, #f8f4ea 100%)",
+      grainOpacity: 0.12,
     },
   },
   {
@@ -21,8 +23,8 @@ export const AMBIENT_PALETTES: { untilHour: number; palette: AmbientPalette }[] 
     palette: {
       name: "morning",
       gradient:
-        "radial-gradient(ellipse 55% 50% at 15% 15%, #e8d98a 0%, transparent 55%), radial-gradient(ellipse 60% 55% at 70% 70%, #cdd3d6 0%, transparent 60%), linear-gradient(170deg, #e3d9ad 0%, #e9e6d6 50%, #f4efe4 100%)",
-      grainOpacity: 0.16,
+        "radial-gradient(ellipse 50% 55% at 20% 15%, #e6dd9a 0%, transparent 55%), radial-gradient(ellipse 50% 50% at 70% 65%, #c6dcb3 0%, transparent 55%), radial-gradient(ellipse 35% 35% at 55% 85%, #b7cfe0 0%, transparent 60%), linear-gradient(165deg, #f1ecdc 0%, #f8f4ea 100%)",
+      grainOpacity: 0.13,
     },
   },
   {
@@ -30,8 +32,8 @@ export const AMBIENT_PALETTES: { untilHour: number; palette: AmbientPalette }[] 
     palette: {
       name: "afternoon",
       gradient:
-        "radial-gradient(ellipse 60% 55% at 25% 20%, #d8cd9e 0%, transparent 60%), radial-gradient(ellipse 65% 55% at 85% 15%, #b9c19a 0%, transparent 60%), linear-gradient(165deg, #c7bd8f 0%, #ded2a8 45%, #f4efe4 100%)",
-      grainOpacity: 0.18,
+        "radial-gradient(ellipse 50% 60% at 38% 18%, #d3dfa3 0%, transparent 55%), radial-gradient(ellipse 45% 50% at 68% 55%, #f0c7cf 0%, transparent 55%), radial-gradient(ellipse 35% 35% at 55% 78%, #a9cbe0 0%, transparent 60%), linear-gradient(160deg, #f2ecdd 0%, #f8f4ea 100%)",
+      grainOpacity: 0.14,
     },
   },
   {
@@ -39,8 +41,8 @@ export const AMBIENT_PALETTES: { untilHour: number; palette: AmbientPalette }[] 
     palette: {
       name: "evening",
       gradient:
-        "radial-gradient(ellipse 55% 50% at 20% 25%, #d9a9ad 0%, transparent 55%), radial-gradient(ellipse 55% 50% at 75% 65%, #93a68d 0%, transparent 55%), linear-gradient(160deg, #b39a90 0%, #d0bd9c 50%, #f0e6d2 100%)",
-      grainOpacity: 0.2,
+        "radial-gradient(ellipse 50% 55% at 28% 22%, #e8b9ca 0%, transparent 55%), radial-gradient(ellipse 45% 45% at 72% 60%, #b6cbe0 0%, transparent 55%), radial-gradient(ellipse 32% 32% at 50% 85%, #cfd9a8 0%, transparent 60%), linear-gradient(165deg, #efe4e1 0%, #f7f1e8 100%)",
+      grainOpacity: 0.15,
     },
   },
   {
@@ -48,8 +50,8 @@ export const AMBIENT_PALETTES: { untilHour: number; palette: AmbientPalette }[] 
     palette: {
       name: "night",
       gradient:
-        "radial-gradient(ellipse 55% 50% at 25% 20%, #7c8657 0%, transparent 55%), radial-gradient(ellipse 50% 45% at 75% 70%, #939a68 0%, transparent 55%), linear-gradient(165deg, #6d7a4d 0%, #9a9a6c 55%, #d8d0a8 100%)",
-      grainOpacity: 0.22,
+        "radial-gradient(ellipse 50% 55% at 30% 20%, #9bb6d8 0%, transparent 55%), radial-gradient(ellipse 45% 45% at 70% 65%, #b8a6c9 0%, transparent 55%), radial-gradient(ellipse 32% 32% at 50% 85%, #9fc0b0 0%, transparent 60%), linear-gradient(165deg, #e3dde9 0%, #f4f0ea 100%)",
+      grainOpacity: 0.15,
     },
   },
 ];
