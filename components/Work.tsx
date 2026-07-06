@@ -1,12 +1,11 @@
 import { FEATURED_PRACTICE, MORE_PRACTICE } from "@/lib/work";
 import { SiteBackground } from "./SiteBackground";
-import { BlurredBlooms } from "./BlurredBlooms";
+import { PlaceholderCollage } from "./PlaceholderCollage";
 
 export default function Work() {
   return (
     <section id="work" className="relative overflow-hidden">
       <SiteBackground className="absolute inset-0" />
-      <BlurredBlooms count={12} />
       <div className="relative mx-auto max-w-5xl px-6 py-20">
         <p className="font-script text-3xl text-sage">Field notes</p>
         <h2 className="mt-2 font-serif text-3xl font-bold italic tracking-tight text-ink sm:text-4xl">
@@ -16,6 +15,8 @@ export default function Work() {
           Where cultural research turned into a point of view, and sometimes, a
           shipped product.
         </p>
+
+        <PlaceholderCollage />
 
         <div className="mt-12 space-y-14">
           {FEATURED_PRACTICE.map((project) => (

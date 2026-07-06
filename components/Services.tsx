@@ -1,12 +1,10 @@
 import { SERVICES } from "@/lib/work";
-import { SiteBackground } from "./SiteBackground";
-import { BlurredBlooms } from "./BlurredBlooms";
+import { AsciiElements } from "./AsciiElements";
 
 export default function Services() {
   return (
-    <section id="services" className="relative overflow-hidden">
-      <SiteBackground className="absolute inset-0" />
-      <BlurredBlooms count={8} />
+    <section id="services" className="relative overflow-hidden bg-white">
+      <AsciiElements count={9} avoid={{ leftRange: [0, 58], topRange: [0, 100] }} />
       <div className="relative mx-auto max-w-5xl px-6 py-24">
         <p className="font-script text-3xl text-sage">Ways in</p>
         <h2 className="mt-2 max-w-xl font-serif text-3xl font-bold italic tracking-tight text-ink sm:text-4xl">
