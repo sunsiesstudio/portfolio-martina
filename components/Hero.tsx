@@ -1,27 +1,19 @@
 import { BlurredBlooms } from "./BlurredBlooms";
+import { SiteBackground } from "./SiteBackground";
 
 export default function Hero() {
   return (
-    <section
-      id="top"
-      className="relative overflow-hidden"
-      style={{
-        background:
-          "radial-gradient(ellipse 65% 60% at 30% 15%, #a9cdd6 0%, transparent 60%), radial-gradient(ellipse 55% 50% at 75% 55%, #c3dcc0 0%, transparent 60%), linear-gradient(160deg, #a3c6d0 0%, #c8ddd2 55%, #e9eee6 100%)",
-      }}
-    >
+    <section id="top" className="relative overflow-hidden">
+      <SiteBackground className="absolute inset-0" />
       <BlurredBlooms count={10} />
 
       <div className="relative mx-auto max-w-6xl px-6 pb-28 pt-20 sm:pt-28">
-        <p className="font-script text-4xl text-ink/80 sm:text-5xl">Martina Solés</p>
-        <p className="mt-4 font-sans text-xs font-bold uppercase tracking-[0.22em] text-ink/60">
-          Cultural Intelligence Researcher &amp; Concept Strategist
-        </p>
-        <h1 className="mt-5 max-w-3xl font-serif text-4xl italic leading-[1.15] tracking-tight text-ink sm:text-6xl">
+        <h1 className="max-w-3xl font-serif text-4xl italic leading-[1.15] tracking-tight text-ink sm:text-6xl">
           I study what&apos;s shifting in culture and technology, then help brands act on it before it&apos;s obvious.
         </h1>
         <p className="mt-6 max-w-xl leading-relaxed text-ink/70">
-          Ten years moving between speculative research and shipped strategy: from a
+          I&apos;m a cultural intelligence researcher and concept strategist. Ten years
+          moving between speculative research and shipped strategy: from a
           Mars-tourism satire exhibited in a Barcelona museum, to a guest-journey study
           that now runs across 3,500+ hotels.
         </p>

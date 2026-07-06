@@ -1,11 +1,11 @@
 import { FEATURED_PRACTICE, MORE_PRACTICE } from "@/lib/work";
-import { AmbientBackground } from "./AmbientBackground";
+import { SiteBackground } from "./SiteBackground";
 import { BlurredBlooms } from "./BlurredBlooms";
 
 export default function Work() {
   return (
     <section id="work" className="relative overflow-hidden">
-      <AmbientBackground className="absolute inset-0" />
+      <SiteBackground className="absolute inset-0" />
       <BlurredBlooms count={12} />
       <div className="relative mx-auto max-w-5xl px-6 py-20">
         <p className="font-script text-3xl text-sage">Field notes</p>

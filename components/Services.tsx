@@ -1,11 +1,11 @@
 import { SERVICES } from "@/lib/work";
-import { AmbientBackground } from "./AmbientBackground";
+import { SiteBackground } from "./SiteBackground";
 import { BlurredBlooms } from "./BlurredBlooms";
 
 export default function Services() {
   return (
     <section id="services" className="relative overflow-hidden">
-      <AmbientBackground className="absolute inset-0" />
+      <SiteBackground className="absolute inset-0" />
       <BlurredBlooms count={8} />
       <div className="relative mx-auto max-w-5xl px-6 py-24">
         <p className="font-script text-3xl text-sage">Ways in</p>

@@ -1,10 +1,10 @@
-import { AmbientBackground } from "./AmbientBackground";
+import { SiteBackground } from "./SiteBackground";
 import { BlurredBlooms } from "./BlurredBlooms";
 
 export default function About() {
   return (
     <section id="about" className="relative overflow-hidden border-t border-ink/10">
-      <AmbientBackground className="absolute inset-0" />
+      <SiteBackground className="absolute inset-0" />
       <BlurredBlooms count={8} />
       <div className="relative mx-auto max-w-3xl px-6 py-20">
         <p className="font-script text-3xl text-sage">About</p>
