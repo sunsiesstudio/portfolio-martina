@@ -1,24 +1,16 @@
-import Image from "next/image";
-import { AsciiShapes } from "./AsciiShapes";
-import { PhotoStipple } from "./PhotoStipple";
+import { BlurredBlooms } from "./BlurredBlooms";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden">
-      <Image
-        src="/images/hero-deer.jpg"
-        alt=""
-        fill
-        priority
-        className="object-cover blur-md scale-110"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-paper/90 via-paper/55 to-paper/25" />
-      <PhotoStipple className="pointer-events-none absolute left-[28%] top-[8%] hidden h-[85%] w-[38%] opacity-70 sm:block" />
-      <AsciiShapes
-        count={16}
-        avoid={{ leftRange: [0, 62], topRange: [0, 100] }}
-        className="z-[1]"
-      />
+    <section
+      id="top"
+      className="relative overflow-hidden"
+      style={{
+        background:
+          "radial-gradient(ellipse 65% 60% at 30% 15%, #a9cdd6 0%, transparent 60%), radial-gradient(ellipse 55% 50% at 75% 55%, #c3dcc0 0%, transparent 60%), linear-gradient(160deg, #a3c6d0 0%, #c8ddd2 55%, #e9eee6 100%)",
+      }}
+    >
+      <BlurredBlooms count={10} />
 
       <div className="relative mx-auto max-w-6xl px-6 pb-28 pt-20 sm:pt-28">
         <p className="font-script text-4xl text-ink/80 sm:text-5xl">Martina Solés</p>
