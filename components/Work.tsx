@@ -1,12 +1,12 @@
 import { FEATURED_PRACTICE, MORE_PRACTICE } from "@/lib/work";
 import { AmbientBackground } from "./AmbientBackground";
-import { AsciiShapes } from "./AsciiShapes";
+import { BlurredBlooms } from "./BlurredBlooms";
 
 export default function Work() {
   return (
     <section id="work" className="relative overflow-hidden">
       <AmbientBackground className="absolute inset-0" />
-      <AsciiShapes count={20} avoid={{ leftRange: [0, 60], topRange: [0, 100] }} />
+      <BlurredBlooms count={12} />
       <div className="relative mx-auto max-w-5xl px-6 py-20">
         <p className="font-script text-3xl text-sage">Field notes</p>
         <h2 className="mt-2 font-serif text-3xl font-bold italic tracking-tight text-ink sm:text-4xl">

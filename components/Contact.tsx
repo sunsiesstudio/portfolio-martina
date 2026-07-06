@@ -1,15 +1,11 @@
 import { AmbientBackground } from "./AmbientBackground";
-import { AsciiShapes } from "./AsciiShapes";
+import { BlurredBlooms } from "./BlurredBlooms";
 
 export default function Contact() {
   return (
     <section id="contact" className="relative overflow-hidden px-6 py-24 text-center">
       <AmbientBackground className="absolute inset-0" />
-      <AsciiShapes
-        count={12}
-        avoid={{ leftRange: [18, 82], topRange: [0, 100] }}
-        className="z-[1]"
-      />
+      <BlurredBlooms count={8} className="z-[1]" />
       <p className="relative font-script text-4xl text-ink/70">Let&apos;s talk</p>
       <h2 className="relative mx-auto mt-2 max-w-2xl font-serif text-3xl font-bold italic tracking-tight text-ink sm:text-5xl">
         Got a shift you&apos;re trying to get ahead of?

@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Figtree:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-serif: 'EB Garamond', Georgia, serif;
-  --font-sans: 'DM Sans', system-ui, sans-serif;
-  --font-script: 'Pinyon Script', cursive;
+  --font-serif: 'Kirang Haerang', cursive;
+  --font-sans: 'Figtree', system-ui, sans-serif;
+  --font-script: 'Kirang Haerang', cursive;
 
   --color-ink: #2b2a24;
   --color-paper: #f8f4ea;
