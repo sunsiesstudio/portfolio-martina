@@ -1,8 +1,12 @@
 import { SERVICES } from "@/lib/work";
+import { AmbientBackground } from "./AmbientBackground";
+import { AsciiShapes } from "./AsciiShapes";
 
 export default function Services() {
   return (
     <section id="services" className="relative overflow-hidden">
+      <AmbientBackground className="absolute inset-0" />
+      <AsciiShapes count={14} avoid={{ leftRange: [0, 58], topRange: [0, 100] }} />
       <div className="relative mx-auto max-w-5xl px-6 py-24">
         <p className="font-script text-3xl text-sage">Ways in</p>
         <h2 className="mt-2 max-w-xl font-serif text-3xl font-bold italic tracking-tight text-ink sm:text-4xl">

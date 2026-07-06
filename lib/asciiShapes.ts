@@ -61,9 +61,9 @@ export function generateAsciiShapes(count: number, avoid?: AvoidZone): AsciiShap
       pattern: SHAPE_PATTERNS[Math.floor(Math.random() * SHAPE_PATTERNS.length)],
       leftPct,
       topPct,
-      fontSize: 8 + Math.random() * Math.random() * 190,
+      fontSize: 9 + Math.random() * Math.random() * 55,
       rotation: Math.random() * 40 - 20,
-      opacity: 0.18 + Math.random() * 0.27,
+      opacity: 0.14 + Math.random() * 0.2,
     };
   });
 }

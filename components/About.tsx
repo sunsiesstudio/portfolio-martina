@@ -1,6 +1,11 @@
+import { AmbientBackground } from "./AmbientBackground";
+import { AsciiShapes } from "./AsciiShapes";
+
 export default function About() {
   return (
-    <section id="about" className="relative overflow-hidden border-t border-ink/10 bg-paper-dim">
+    <section id="about" className="relative overflow-hidden border-t border-ink/10">
+      <AmbientBackground className="absolute inset-0" />
+      <AsciiShapes count={12} avoid={{ leftRange: [10, 90], topRange: [0, 100] }} />
       <div className="relative mx-auto max-w-3xl px-6 py-20">
         <p className="font-script text-3xl text-sage">About</p>
         <h2 className="mt-2 font-serif text-3xl font-bold italic tracking-tight text-ink sm:text-4xl">
