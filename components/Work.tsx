@@ -12,8 +12,8 @@ export default function Work() {
           Research &amp; practice
         </h2>
         <p className="mt-3 max-w-xl text-ink/60">
-          Where cultural research turned into a point of view, and sometimes, a
-          shipped product. Click anything in the board below to jump to its story.
+          Where conceptual research meets functional execution. Click anything in
+          the board below to jump to its story.
         </p>
 
         <ProjectCollage />
@@ -29,23 +29,16 @@ export default function Work() {
               </h3>
               <p className="mt-2 text-sm font-semibold text-ink/50">{project.role}</p>
               <p className="mt-5 max-w-2xl leading-relaxed text-ink/75">{project.paragraph}</p>
-
-              {project.stats && (
-                <ul className="mt-6 flex flex-wrap gap-x-8 gap-y-2">
-                  {project.stats.map((stat) => (
-                    <li key={stat} className="text-sm font-semibold text-ink/70">
-                      · {stat}
-                    </li>
-                  ))}
-                </ul>
-              )}
+              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-ink/70">
+                <span className="font-semibold text-ink">Impact:</span> {project.impact}
+              </p>
             </div>
           ))}
         </div>
 
         {/* condensed practice index */}
         <div className="mt-16 border-t border-ink/10 pt-8">
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-ink/40">Also</p>
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-ink/40">Brief Notes</p>
           <div className="mt-6 space-y-6">
             {MORE_PRACTICE.map((item) => (
               <div key={item.id} id={item.id} className="scroll-mt-24 flex flex-col gap-1 sm:flex-row sm:gap-6">

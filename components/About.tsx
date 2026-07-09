@@ -9,18 +9,17 @@ export default function About() {
       <div className="relative mx-auto max-w-3xl px-6 py-20">
         <p className="font-script text-3xl text-sage">About</p>
         <h2 className="mt-2 font-serif text-3xl font-bold italic tracking-tight text-ink sm:text-4xl">
-          Reading culture for a living
+          Reading culture for a living.
         </h2>
         <p className="mt-6 max-w-xl leading-relaxed text-ink/75">
-          Martina studies what&apos;s shifting in culture and technology, then
-          helps brands act on it before it&apos;s obvious. That instinct started
-          with speculative prototypes exhibited at Barcelona&apos;s DHUB design
-          museum and covered by national television, and later shaped brand and
-          product strategy for platforms like BeInCrypto and Guestline.
+          Based in Barcelona and working globally. I operate where cultural
+          forecasting meets technical reality.
         </p>
         <p className="mt-4 max-w-xl leading-relaxed text-ink/75">
-          She works from research, not assumptions, and from a decade spent on
-          both sides: building the speculative thing, and shipping the real one.
+          Because I spent years as both a visual designer and a product
+          architect, my research avoids vague generalities. I provide brands
+          with clear, tactically viable blueprints for how to evolve their
+          products, narratives, and platforms alongside human culture.
         </p>
       </div>
     </section>

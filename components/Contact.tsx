@@ -11,8 +11,8 @@ export default function Contact() {
         Got a shift you&apos;re trying to get ahead of?
       </h2>
       <p className="relative mx-auto mt-5 max-w-md text-ink/70">
-        I take on a small number of research and strategy projects at a time.
-        Tell me what you&apos;re building.
+        I take on a select number of strategy, research, and concept consulting
+        projects each year. Let&apos;s look at the signals together.
       </p>
       <div className="relative mt-9 flex flex-wrap items-center justify-center gap-4">
         <a

@@ -9,13 +9,17 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-6xl px-6 pb-28 pt-20 sm:pt-28">
         <h1 className="max-w-3xl font-serif text-4xl italic leading-[1.15] tracking-tight text-ink sm:text-6xl">
-          I study what&apos;s shifting in culture and technology, then help brands act on it before it&apos;s obvious.
+          I study cultural shifts and emerging technology to help brands design what comes next.
         </h1>
         <p className="mt-6 max-w-xl leading-relaxed text-ink/70">
-          I&apos;m a cultural intelligence researcher and concept strategist. Ten years
-          moving between speculative research and shipped strategy: from a
-          Mars-tourism satire exhibited in a Barcelona museum, to a guest-journey study
-          that now runs across 3,500+ hotels.
+          I am a cultural intelligence researcher and concept strategist. My work
+          combines conceptual foresight with a decade of technical execution.
+        </p>
+        <p className="mt-4 max-w-xl leading-relaxed text-ink/70">
+          Moving from visual communication and wearable prototypes to scaling
+          digital platforms across thousands of properties, I look at trends
+          through a practical lens. I translate cultural signals into clear
+          product strategies, positioning territories, and interactive systems.
         </p>
         <div className="mt-9 flex flex-wrap items-center gap-4">
           <a

@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import Trajectory from "@/components/Trajectory";
 import Work from "@/components/Work";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
@@ -12,6 +13,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <Services />
+      <Trajectory />
       <Work />
       <About />
       <Contact />

@@ -11,7 +11,7 @@ export default function Services() {
           Four ways to work together
         </h2>
         <p className="mt-3 max-w-md text-ink/60">
-          Less a menu, more a loop: most projects move through all four.
+          An interconnected loop of macro signals and micro execution.
         </p>
 
         <div className="relative mt-16 grid grid-cols-[3rem_1fr] gap-x-6 sm:grid-cols-[4.5rem_1fr] sm:gap-x-10">

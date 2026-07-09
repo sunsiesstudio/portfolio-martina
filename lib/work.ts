@@ -8,26 +8,49 @@ export const SERVICES: Service[] = [
   {
     title: "Signal Scanning",
     description:
-      "What's happening in AI, wearables, biotech and beyond that could hit your category (fashion, beauty, food, mobility, whatever it is) in the next 1-3 years.",
+      "Tracking developments across AI, wearables, advanced interaction, and biotechnology to identify what will impact your category in the next 1-3 years.",
     note: {
-      text: "A live version of this: signal-map-proxy",
+      text: "View live project: signal-map-proxy",
       href: "https://signal-map-proxy-l25k.vercel.app/",
     },
   },
   {
     title: "Cultural Tension Mapping",
     description:
-      "How people actually feel about that technology: fear, desire, resistance, and what that means for how (or whether) a brand should speak about it.",
+      "Analyzing how people actually interact with emerging tech. I decode the friction points (from aesthetic resistance to digital fatigue) to map out how a brand should engage.",
   },
   {
     title: "Positioning Territories",
     description:
-      "Actionable concepts a brand can build into product, communication or innovation, the way I built \"Sovereign Body\" or \"Felt Knowledge.\"",
+      "Translating abstract signals into actionable brand concepts. I build the experience frameworks and narratives that allow brands to confidently step into new spaces.",
   },
   {
-    title: "Innovation Audit",
+    title: "Innovation Audits",
     description:
-      "An honest look at what a brand is doing with emerging tech right now, and whether it connects to something real or is just noise.",
+      "A practical diagnostic of your current emerging tech initiatives, aligning your digital roadmap with real cultural shifts and behavioral data.",
+  },
+];
+
+export type TrajectoryItem = {
+  label: string;
+  description: string;
+};
+
+export const TRAJECTORY: TrajectoryItem[] = [
+  {
+    label: "Aesthetic Foundation",
+    description:
+      "A degree in Graphic Design & Visual Communication (BAU) focused on how culture communicates and signals through visual language.",
+  },
+  {
+    label: "Interaction Forensics",
+    description:
+      "A Master's in Advanced Interaction (IAAC) exploring how humans connect with hardware, wearables, and spatial environments.",
+  },
+  {
+    label: "Systems & Material Culture",
+    description:
+      "Over six years as a Senior Product Designer inside corporate tech infrastructures, combined with hands-on experimentation in 3D manufacturing, digital identity, and independent brand launches.",
   },
 ];
 
@@ -37,41 +60,49 @@ export type Practice = {
   title: string;
   role: string;
   paragraph: string;
-  stats?: string[];
+  impact: string;
   featured?: boolean;
 };
 
 export const FEATURED_PRACTICE: Practice[] = [
   {
-    id: "speculative",
-    eyebrow: "Final Degree Project · Speculative Design",
-    title: "Phobos, a Mars-tourism agency that doesn't exist",
-    role: "Idea, Art Direction & Programming",
+    id: "sunsies",
+    eyebrow: "Independent Venture · Sunsies Studio",
+    title: "Material Culture & Dopamine Design",
+    role: "Founder & Creative Director",
     paragraph:
-      "A satirical travel agency to Mars, built to critique the obsession with online fame. Tourists compete for visibility points, and only the most-watched get their trip paid for. Built as fiction, but the question behind it was real research: what happens when a culture's need for approval has nowhere left to go but space.",
-    stats: ["Full concept, story, interactive logo (Processing) and coded website"],
+      "Launched last year as a physical-digital experiment, Sunsies Studio explores the intersection of 3D printing and material trend forecasting. The brand takes classic, vintage-inspired home decor profiles and reinterprets them through highly colorful, eclectic \"dopamine design\" aesthetics.",
+    impact:
+      "A live playground for testing on-demand digital manufacturing, modern color theory, and next-gen commerce systems.",
+  },
+  {
+    id: "guestline",
+    eyebrow: "Research-Led Product Strategy · Guestline",
+    title: "Systems Design & Behavioral Friction",
+    role: "Lead Strategy & Product Research",
+    paragraph:
+      "An end-to-end strategic audit of the physical and digital guest journey. Unifying physical kiosks, web portals, and booking engines into a single connected ecosystem by analyzing micro-interactions and spatial friction.",
+    impact:
+      "Reduced check-in times by 35% and accelerated digital self-service adoption from 30% to 50% across 3,500+ properties.",
   },
   {
     id: "emotional-privacy",
     eyebrow: "IAAC Master in Advanced Interaction",
     title: "The End of Emotional Privacy",
-    role: "Researcher, Designer & Programmer",
+    role: "Researcher, Experience Designer & Programmer",
     paragraph:
-      "A wearable that reads body heat and broadcasts it as emotion, asking what happens once feelings become a data source corporations can act on. Exhibited for a month at Barcelona's DHUB design museum, covered by Spanish national TV and press.",
-    stats: ["Exhibited at DHUB Barcelona", "Covered by national TV & press"],
+      "A wearable technology prototype that reads biometrics and broadcasts internal states as visual emotion. An exploration into the future of biological data, questioning privacy boundaries as biometrics become external.",
+    impact:
+      "Exhibited at Barcelona's DHUB design museum; covered by Spanish national television and press.",
   },
   {
-    id: "guestline",
-    eyebrow: "Research-Led Strategy · Guestline",
-    title: "What guest-journey research turned into",
-    role: "Strategy & Product Research · Feb 2023 – Jan 2025",
+    id: "beincrypto",
+    eyebrow: "Audience Research & Rebrand · BeInCrypto",
+    title: "Decoding Digital Subcultures",
+    role: "Design Strategy Lead",
     paragraph:
-      "I started by auditing the full guest journey (interviews, heatmaps, usability testing), which surfaced a simple truth: guests were being asked to do the same thing twice. That research became the strategy behind a redesign of Guestline's kiosk, portal and booking engine, now running as one connected system across thousands of hotels.",
-    stats: [
-      "Check-in time −35% (7 → 4.5 min)",
-      "Self-service adoption 30% → 50%",
-      "Live across 3,500+ hotels",
-    ],
+      "Mapping the behavioral archetypes of user interactions in Web3 through workshops and a 30-person usability study, translating specialized digital subcultures into an accessible global platform identity.",
+    impact: "Restructured the digital identity system across 12 languages.",
   },
 ];
 
@@ -84,39 +115,25 @@ export type PracticeItem = {
 
 export const MORE_PRACTICE: PracticeItem[] = [
   {
-    id: "beincrypto",
-    title: "BeInCrypto",
-    role: "Design Lead, 2021–2022",
-    note:
-      "Researched the audience first (workshops, personas, a 30-person usability study) before rebranding the platform around \"the crypto explorer,\" live across 12 languages.",
-  },
-  {
     id: "bmw",
     title: "BMW Retail Lab 2.0",
     role: "CX Designer @ rpc",
     note:
-      "Helped design a live prototyping showroom testing 8 connected touchpoints (AR, VR, interactive walls) between home and dealership.",
+      "Co-designed a live prototyping showroom testing 8 future-facing connected touchpoints bridging the home-to-dealership journey.",
+  },
+  {
+    id: "augmented-identity",
+    title: "Augmented Identity",
+    role: "Self-Initiated AR Filters",
+    note:
+      "Prototyping micro-interactions and digital self-expression using Spark AR, including custom lipstick try-ons and community tools.",
   },
   {
     id: "quanos",
     title: "Quanos",
-    role: "Brand Designer @ rpc",
+    role: "Brand Architect @ rpc",
     note:
-      "Brand identity for the merger of TID and Docware under the Schema Group: logo, colour system, typography.",
-  },
-  {
-    id: "ar-filters",
-    title: "AR filters",
-    role: "Self-initiated",
-    note:
-      "Rouje (lipstick try-on), Sighh Studio (floral filters), and a UX-community feedback filter, built solo with Spark AR.",
-  },
-  {
-    id: "sunsies",
-    title: "Sunsies Studio",
-    role: "Brand Design",
-    note:
-      "Brand identity for the 3D-printed jewellery studio, plus the \"Take a Seat\" campaign. Case studies coming soon.",
+      "Brand strategy and structural identity system for the merger of TID and Docware under the Schema Group.",
   },
 ];
 
@@ -130,12 +147,11 @@ export type CollageItem = {
 // build the clickable moodboard at the top of Field Notes. Each links down
 // to that project's full write-up via its id.
 export const COLLAGE_ITEMS: CollageItem[] = [
-  { id: "speculative", title: "Phobos", type: "text" },
-  { id: "emotional-privacy", title: "The End of Emotional Privacy", type: "image" },
+  { id: "sunsies", title: "Sunsies Studio", type: "text" },
   { id: "guestline", title: "Guestline", type: "image" },
+  { id: "emotional-privacy", title: "The End of Emotional Privacy", type: "image" },
   { id: "beincrypto", title: "BeInCrypto", type: "image" },
   { id: "bmw", title: "BMW Retail Lab", type: "image" },
+  { id: "augmented-identity", title: "Augmented Identity", type: "text" },
   { id: "quanos", title: "Quanos", type: "text" },
-  { id: "ar-filters", title: "AR filters", type: "image" },
-  { id: "sunsies", title: "Sunsies Studio", type: "text" },
 ];
