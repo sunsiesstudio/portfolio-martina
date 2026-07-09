@@ -1,6 +1,6 @@
 import { FEATURED_PRACTICE, MORE_PRACTICE } from "@/lib/work";
 import { SiteBackground } from "./SiteBackground";
-import { PlaceholderCollage } from "./PlaceholderCollage";
+import { ProjectCollage } from "./ProjectCollage";
 
 export default function Work() {
   return (
@@ -13,14 +13,14 @@ export default function Work() {
         </h2>
         <p className="mt-3 max-w-xl text-ink/60">
           Where cultural research turned into a point of view, and sometimes, a
-          shipped product.
+          shipped product. Click anything in the board below to jump to its story.
         </p>
 
-        <PlaceholderCollage />
+        <ProjectCollage />
 
         <div className="mt-12 space-y-14">
           {FEATURED_PRACTICE.map((project) => (
-            <div key={project.id} className="border-t border-ink/10 pt-8">
+            <div key={project.id} id={project.id} className="scroll-mt-24 border-t border-ink/10 pt-8">
               <p className="text-xs font-bold uppercase tracking-[0.15em] text-sage">
                 {project.eyebrow}
               </p>
@@ -48,7 +48,7 @@ export default function Work() {
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-ink/40">Also</p>
           <div className="mt-6 space-y-6">
             {MORE_PRACTICE.map((item) => (
-              <div key={item.title} className="flex flex-col gap-1 sm:flex-row sm:gap-6">
+              <div key={item.id} id={item.id} className="scroll-mt-24 flex flex-col gap-1 sm:flex-row sm:gap-6">
                 <div className="sm:w-56 sm:flex-none">
                   <p className="font-serif text-lg font-bold italic text-ink">{item.title}</p>
                   <p className="text-xs font-semibold text-ink/45">{item.role}</p>

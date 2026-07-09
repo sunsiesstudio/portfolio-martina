@@ -76,6 +76,7 @@ export const FEATURED_PRACTICE: Practice[] = [
 ];
 
 export type PracticeItem = {
+  id: string;
   title: string;
   role: string;
   note: string;
@@ -83,33 +84,58 @@ export type PracticeItem = {
 
 export const MORE_PRACTICE: PracticeItem[] = [
   {
+    id: "beincrypto",
     title: "BeInCrypto",
     role: "Design Lead, 2021–2022",
     note:
       "Researched the audience first (workshops, personas, a 30-person usability study) before rebranding the platform around \"the crypto explorer,\" live across 12 languages.",
   },
   {
+    id: "bmw",
     title: "BMW Retail Lab 2.0",
     role: "CX Designer @ rpc",
     note:
       "Helped design a live prototyping showroom testing 8 connected touchpoints (AR, VR, interactive walls) between home and dealership.",
   },
   {
+    id: "quanos",
     title: "Quanos",
     role: "Brand Designer @ rpc",
     note:
       "Brand identity for the merger of TID and Docware under the Schema Group: logo, colour system, typography.",
   },
   {
+    id: "ar-filters",
     title: "AR filters",
     role: "Self-initiated",
     note:
       "Rouje (lipstick try-on), Sighh Studio (floral filters), and a UX-community feedback filter, built solo with Spark AR.",
   },
   {
+    id: "sunsies",
     title: "Sunsies Studio",
     role: "Brand Design",
     note:
       "Brand identity for the 3D-printed jewellery studio, plus the \"Take a Seat\" campaign. Case studies coming soon.",
   },
+];
+
+export type CollageItem = {
+  id: string;
+  title: string;
+  type: "image" | "text";
+};
+
+// One entry per project across FEATURED_PRACTICE and MORE_PRACTICE, used to
+// build the clickable moodboard at the top of Field Notes. Each links down
+// to that project's full write-up via its id.
+export const COLLAGE_ITEMS: CollageItem[] = [
+  { id: "speculative", title: "Phobos", type: "text" },
+  { id: "emotional-privacy", title: "The End of Emotional Privacy", type: "image" },
+  { id: "guestline", title: "Guestline", type: "image" },
+  { id: "beincrypto", title: "BeInCrypto", type: "image" },
+  { id: "bmw", title: "BMW Retail Lab", type: "image" },
+  { id: "quanos", title: "Quanos", type: "text" },
+  { id: "ar-filters", title: "AR filters", type: "image" },
+  { id: "sunsies", title: "Sunsies Studio", type: "text" },
 ];
